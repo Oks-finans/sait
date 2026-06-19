@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оксана Захаренко - внешний финансовый директор</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,11 +27,9 @@
             }
         }
     </script>
-    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
@@ -57,11 +54,9 @@
 </head>
 <body class="text-brand-darkText min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-brand-emerald selection:text-white">
 
-    <!-- Фоновые мягкие градиенты для первого экрана -->
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-goldLight/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-20 left-10 w-[400px] h-[400px] bg-brand-emerald/5 rounded-full blur-3xl pointer-events-none"></div>
 
-    <!-- Шапка сайта -->
     <header class="relative z-10 border-b border-brand-borderWarm/60 bg-brand-lightBg/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex flex-col">
@@ -74,7 +69,6 @@
                 </span>
             </div>
             
-            <!-- Контакты для десктопа -->
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <span class="text-brand-darkText/70 flex items-center gap-2">
                     <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
@@ -89,7 +83,6 @@
                 </a>
             </div>
 
-            <!-- Кнопка связи на мобильных -->
             <div class="md:hidden">
                 <a href="tel:+79122614000" class="p-2.5 rounded-full bg-white border border-brand-borderWarm text-brand-emerald hover:bg-brand-borderWarm/30 transition-colors inline-block">
                     <i data-lucide="phone" class="w-5 h-5"></i>
@@ -98,15 +91,12 @@
         </div>
     </header>
 
-    <!-- Основной контент первого экрана -->
     <main class="relative z-10 flex-grow flex flex-col justify-start">
         
-        <!-- Первая страница: главный экран -->
         <section class="flex items-center py-12 lg:py-20 border-b border-brand-borderWarm/40">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                     
-                    <!-- Левый блок первого экрана -->
                     <div class="lg:col-span-7 flex flex-col justify-center space-y-6 lg:pr-4 text-left">
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-goldLight/40 border border-brand-gold/20 w-fit">
                             <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span>
@@ -123,7 +113,6 @@
                             Помогаю собственникам и генеральным директорам разобраться в реальном положении дел, устранить кассовые разрывы, настроить налоговое планирование и контроль ключевых показателей для уверенного управления бизнесом.
                         </p>
 
-                        <!-- Интерактивный блок выбора проблем бизнеса -->
                         <div class="bg-white border border-brand-borderWarm/80 rounded-2xl p-4 sm:p-5 space-y-3.5 shadow-premium">
                             <span class="text-xs font-bold text-brand-darkText/50 uppercase tracking-wider block">
                                 выберите главную проблему или задачу вашего бизнеса:
@@ -148,12 +137,10 @@
                                 </button>
                             </div>
 
-                            <!-- Ответ финдиректора -->
                             <div id="pain-response" class="hidden mt-3 p-4 rounded-xl bg-brand-goldLight/20 border border-brand-gold/20 text-xs sm:text-sm text-brand-darkText/90 transition-all duration-300">
                             </div>
                         </div>
 
-                        <!-- Кнопки действий -->
                         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                             <button onclick="openModal()" class="px-8 py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldHover text-white font-bold text-sm sm:text-base transition-all transform hover:-translate-y-0.5 shadow-md text-center flex items-center justify-center gap-2">
                                 <i data-lucide="message-square-plus" class="w-5 h-5"></i>
@@ -166,13 +153,11 @@
                         </div>
                     </div>
 
-                    <!-- Правый блок первого экрана: фотография -->
                     <div class="lg:col-span-5 flex justify-center lg:justify-end">
                         <div class="relative w-full max-w-[360px] sm:max-w-[400px] aspect-[4/5] rounded-3xl bg-white border border-brand-borderWarm p-3 shadow-premium hover:shadow-premium-hover transition-shadow duration-500">
                             
-                            <!-- Рамка с фотографией Оксаны -->
                             <div class="w-full h-full rounded-2xl overflow-hidden relative group">
-                                <img id="cfo-photo" src="https://i.yapx.ru/dzeZV.png" 
+                                <img id="cfo-photo" src="https://i.yapx.ru/d2zeY.jpg" 
                                      alt="Оксана Захаренко - финансовый директор" 
                                      class="w-full h-full object-cover transition-all duration-700 hover:scale-105"
                                      onerror="handleImageError(this)">
@@ -192,7 +177,6 @@
                                 </div>
                             </div>
 
-                            <!-- Декоративные бейджи -->
                             <div class="absolute -top-4 -right-4 bg-white border border-brand-borderWarm rounded-2xl p-3 shadow-md flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-xl bg-brand-goldLight/40 flex items-center justify-center">
                                     <i data-lucide="line-chart" class="w-5 h-5 text-brand-gold"></i>
@@ -220,14 +204,11 @@
             </div>
         </section>
 
-        <!-- Вторая страница: интерактивный раздел с кейсами -->
         <section id="cases-section" class="relative py-16 lg:py-24 bg-white/40">
-            <!-- Декоративный фоновый градиент для второго экрана -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-goldLight/15 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
-                <!-- Заголовок раздела -->
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-emerald/5 border border-brand-emerald/10 mb-3">
                         <span class="w-1.5 h-1.5 rounded-full bg-brand-emerald"></span>
@@ -236,26 +217,22 @@
                         </span>
                     </div>
                     <h2 class="text-3xl sm:text-4xl font-serif text-brand-emerald mb-4 tracking-tight">
-                        Реальные кейсы из финансовой практики
+                        Реальные кейсы из financial практики
                     </h2>
                     <p class="text-sm sm:text-base text-brand-darkText/70 leading-relaxed font-light">
                         каждый проект - это выверенная система решений, направленная на оптимизацию затрат, рост масштаба бизнеса и кратное увеличение чистой прибыли собственника.
                     </p>
                 </div>
 
-                <!-- Контейнер интерактивного слайдера -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
                     
-                    <!-- Левая колонка: навигация (табы-карточки) -->
                     <div class="lg:col-span-4 flex flex-col justify-between space-y-3">
                         <span class="text-[11px] font-bold text-brand-darkText/40 uppercase tracking-wider block mb-1">
                             выберите направление кейса:
                         </span>
                         
-                        <!-- Список табов -->
                         <div class="flex lg:flex-col gap-3 overflow-x-auto pb-4 lg:pb-0 no-scrollbar" id="case-tabs">
                             
-                            <!-- Таб 1 -->
                             <button onclick="setActiveCase(1)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-1">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">01</span>
@@ -266,7 +243,6 @@
                                 </div>
                             </button>
 
-                            <!-- Таб 2 -->
                             <button onclick="setActiveCase(2)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-2">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">02</span>
@@ -277,7 +253,6 @@
                                 </div>
                             </button>
 
-                            <!-- Таб 3 -->
                             <button onclick="setActiveCase(3)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-3">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">03</span>
@@ -288,7 +263,6 @@
                                 </div>
                             </button>
 
-                            <!-- Таб 4 -->
                             <button onclick="setActiveCase(4)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-4">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">04</span>
@@ -301,7 +275,6 @@
 
                         </div>
 
-                        <!-- Стрелки навигации для десктопа -->
                         <div class="hidden lg:flex items-center gap-3 pt-6">
                             <button onclick="prevCase()" class="p-3.5 rounded-xl border border-brand-borderWarm bg-white text-brand-emerald hover:bg-brand-lightBg hover:border-brand-gold/30 transition-all shadow-sm">
                                 <i data-lucide="chevron-left" class="w-5 h-5"></i>
@@ -315,21 +288,16 @@
                         </div>
                     </div>
 
-                    <!-- Правая колонка: интерактивная карточка контента кейса -->
                     <div class="lg:col-span-8 flex">
                         <div class="bg-white border border-brand-borderWarm rounded-3xl p-6 sm:p-10 shadow-premium w-full flex flex-col justify-between relative overflow-hidden" id="case-content-card">
                             
-                            <!-- Фоновый водяной знак с номером кейса -->
                             <div class="absolute -top-10 -right-6 text-[180px] font-black font-serif text-brand-goldLight/20 select-none pointer-events-none leading-none" id="case-watermark">
                                 01
                             </div>
 
-                            <!-- Тело кейса (Контент меняется скриптом) -->
                             <div class="space-y-8 relative z-10" id="case-body">
-                                <!-- Контент рендерится через JavaScript -->
-                            </div>
+                                </div>
 
-                            <!-- СТА кнопка внутри кейса -->
                             <div class="border-t border-brand-borderWarm/60 pt-6 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-full bg-brand-goldLight/40 flex items-center justify-center text-brand-gold">
@@ -351,7 +319,6 @@
 
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="relative z-10 border-t border-brand-borderWarm/60 bg-white/50 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
             <p class="text-xs text-brand-darkText/50 font-medium">
@@ -363,7 +330,6 @@
         </div>
     </footer>
 
-    <!-- Модальное окно связи (Контактная форма) -->
     <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-darkText/40 backdrop-blur-sm hidden transition-opacity duration-300">
         <div class="bg-white border border-brand-borderWarm rounded-3xl w-full max-w-lg p-6 sm:p-8 relative shadow-premium transform scale-95 transition-transform duration-300" id="modal-container">
             
@@ -371,7 +337,6 @@
                 <i data-lucide="x" class="w-4 h-4"></i>
             </button>
 
-            <!-- Контент модалки -->
             <div id="modal-form-view">
                 <h3 class="text-xl sm:text-2xl font-serif text-brand-emerald mb-2">
                     Обсудить финансовое здоровье компании
@@ -408,7 +373,6 @@
                 </form>
             </div>
 
-            <!-- Экран успешной отправки -->
             <div id="modal-success-view" class="hidden text-center py-8 space-y-4">
                 <div class="w-16 h-16 bg-brand-goldLight/40 border border-brand-gold/30 rounded-full flex items-center justify-center mx-auto">
                     <i data-lucide="check" class="w-8 h-8 text-brand-gold"></i>
@@ -427,7 +391,6 @@
         </div>
     </div>
 
-    <!-- Скрипты -->
     <script>
         // Инициализация иконок
         lucide.createIcons();
@@ -532,13 +495,11 @@
             updateCaseUI();
         }
 
-        // Кнопки карусели «следующий»/«предыдущий»
         function nextCase() {
             currentActiveCase = currentActiveCase === 4 ? 1 : currentActiveCase + 1;
             updateCaseUI();
         }
 
-        // Кнопки карусели «предыдущий»
         function prevCase() {
             currentActiveCase = currentActiveCase === 1 ? 4 : currentActiveCase - 1;
             updateCaseUI();
@@ -568,7 +529,6 @@
             if (activeTab) {
                 activeTab.classList.remove('border-brand-borderWarm/80', 'bg-white');
                 activeTab.classList.add('border-brand-gold', 'shadow-md', 'bg-brand-goldLight/10');
-                // Скроллим к табу на мобилках
                 activeTab.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
             }
 
@@ -614,7 +574,6 @@
                 bodyDiv.classList.remove('opacity-0', 'scale-95');
                 bodyDiv.classList.add('opacity-100', 'scale-100');
                 
-                // Переинициализация иконок внутри нового контента
                 lucide.createIcons();
             }, 200);
         }
@@ -631,6 +590,7 @@
             }, 10);
         }
 
+        // ... (остальные функции closeModal, handleFormSubmit, handleImageError, window.onload сохранены без изменений)
         function closeModal() {
             const modal = document.getElementById('contact-modal');
             const container = document.getElementById('modal-container');
