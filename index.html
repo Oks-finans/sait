@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оксана Захаренко - внешний финансовый директор</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -27,9 +28,11 @@
             }
         }
     </script>
+    <!-- Google Fonts: Playfair Display (Serif) & Inter (Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
@@ -54,9 +57,11 @@
 </head>
 <body class="text-brand-darkText min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-brand-emerald selection:text-white">
 
+    <!-- Фоновые мягкие градиенты для первого экрана -->
     <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-goldLight/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-20 left-10 w-[400px] h-[400px] bg-brand-emerald/5 rounded-full blur-3xl pointer-events-none"></div>
 
+    <!-- Шапка сайта -->
     <header class="relative z-10 border-b border-brand-borderWarm/60 bg-brand-lightBg/80 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex flex-col">
@@ -69,6 +74,7 @@
                 </span>
             </div>
             
+            <!-- Контакты для десктопа -->
             <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <span class="text-brand-darkText/70 flex items-center gap-2">
                     <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
@@ -83,6 +89,7 @@
                 </a>
             </div>
 
+            <!-- Кнопка связи на мобильных -->
             <div class="md:hidden">
                 <a href="tel:+79122614000" class="p-2.5 rounded-full bg-white border border-brand-borderWarm text-brand-emerald hover:bg-brand-borderWarm/30 transition-colors inline-block">
                     <i data-lucide="phone" class="w-5 h-5"></i>
@@ -91,12 +98,15 @@
         </div>
     </header>
 
+    <!-- Основной контент первого экрана -->
     <main class="relative z-10 flex-grow flex flex-col justify-start">
         
+        <!-- Первая страница: главный экран -->
         <section class="flex items-center py-12 lg:py-20 border-b border-brand-borderWarm/40">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                     
+                    <!-- Левый блок первого экрана -->
                     <div class="lg:col-span-7 flex flex-col justify-center space-y-6 lg:pr-4 text-left">
                         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-goldLight/40 border border-brand-gold/20 w-fit">
                             <span class="w-1.5 h-1.5 rounded-full bg-brand-gold"></span>
@@ -113,6 +123,7 @@
                             Помогаю собственникам и генеральным директорам разобраться в реальном положении дел, устранить кассовые разрывы, настроить налоговое планирование и контроль ключевых показателей для уверенного управления бизнесом.
                         </p>
 
+                        <!-- Интерактивный блок выбора проблем бизнеса -->
                         <div class="bg-white border border-brand-borderWarm/80 rounded-2xl p-4 sm:p-5 space-y-3.5 shadow-premium">
                             <span class="text-xs font-bold text-brand-darkText/50 uppercase tracking-wider block">
                                 выберите главную проблему или задачу вашего бизнеса:
@@ -137,10 +148,12 @@
                                 </button>
                             </div>
 
+                            <!-- Ответ финдиректора -->
                             <div id="pain-response" class="hidden mt-3 p-4 rounded-xl bg-brand-goldLight/20 border border-brand-gold/20 text-xs sm:text-sm text-brand-darkText/90 transition-all duration-300">
                             </div>
                         </div>
 
+                        <!-- Кнопки действий -->
                         <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
                             <button onclick="openModal()" class="px-8 py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldHover text-white font-bold text-sm sm:text-base transition-all transform hover:-translate-y-0.5 shadow-md text-center flex items-center justify-center gap-2">
                                 <i data-lucide="message-square-plus" class="w-5 h-5"></i>
@@ -153,9 +166,11 @@
                         </div>
                     </div>
 
+                    <!-- Правый блок первого экрана: фотография -->
                     <div class="lg:col-span-5 flex justify-center lg:justify-end">
                         <div class="relative w-full max-w-[360px] sm:max-w-[400px] aspect-[4/5] rounded-3xl bg-white border border-brand-borderWarm p-3 shadow-premium hover:shadow-premium-hover transition-shadow duration-500">
                             
+                            <!-- Рамка с фотографией Оксаны -->
                             <div class="w-full h-full rounded-2xl overflow-hidden relative group">
                                 <img id="cfo-photo" src="https://i.yapx.ru/d2zeY.jpg" 
                                      alt="Оксана Захаренко - финансовый директор" 
@@ -177,6 +192,7 @@
                                 </div>
                             </div>
 
+                            <!-- Декоративные бейджи -->
                             <div class="absolute -top-4 -right-4 bg-white border border-brand-borderWarm rounded-2xl p-3 shadow-md flex items-center gap-3">
                                 <div class="w-10 h-10 rounded-xl bg-brand-goldLight/40 flex items-center justify-center">
                                     <i data-lucide="line-chart" class="w-5 h-5 text-brand-gold"></i>
@@ -204,11 +220,13 @@
             </div>
         </section>
 
+        <!-- Вторая страница: интерактивный раздел с кейсами -->
         <section id="cases-section" class="relative py-16 lg:py-24 bg-white/40">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-goldLight/15 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 
+                <!-- Заголовок раздела -->
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-emerald/5 border border-brand-emerald/10 mb-3">
                         <span class="w-1.5 h-1.5 rounded-full bg-brand-emerald"></span>
@@ -217,22 +235,26 @@
                         </span>
                     </div>
                     <h2 class="text-3xl sm:text-4xl font-serif text-brand-emerald mb-4 tracking-tight">
-                        Реальные кейсы из financial практики
+                        Реальные кейсы из финансовой практики
                     </h2>
                     <p class="text-sm sm:text-base text-brand-darkText/70 leading-relaxed font-light">
                         каждый проект - это выверенная система решений, направленная на оптимизацию затрат, рост масштаба бизнеса и кратное увеличение чистой прибыли собственника.
                     </p>
                 </div>
 
+                <!-- Контейнер интерактивного слайдера -->
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
                     
+                    <!-- Левая колонка: навигация (табы-карточки) -->
                     <div class="lg:col-span-4 flex flex-col justify-between space-y-3">
                         <span class="text-[11px] font-bold text-brand-darkText/40 uppercase tracking-wider block mb-1">
                             выберите направление кейса:
                         </span>
                         
+                        <!-- Список табов -->
                         <div class="flex lg:flex-col gap-3 overflow-x-auto pb-4 lg:pb-0 no-scrollbar" id="case-tabs">
                             
+                            <!-- Таб 1 -->
                             <button onclick="setActiveCase(1)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-1">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">01</span>
@@ -243,6 +265,7 @@
                                 </div>
                             </button>
 
+                            <!-- Таб 2 -->
                             <button onclick="setActiveCase(2)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-2">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">02</span>
@@ -253,6 +276,7 @@
                                 </div>
                             </button>
 
+                            <!-- Таб 3 -->
                             <button onclick="setActiveCase(3)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-3">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">03</span>
@@ -263,6 +287,7 @@
                                 </div>
                             </button>
 
+                            <!-- Таб 4 -->
                             <button onclick="setActiveCase(4)" class="case-tab-btn flex-shrink-0 w-[240px] lg:w-full p-4 rounded-2xl border text-left transition-all duration-300 bg-white" id="tab-case-4">
                                 <div class="flex items-start gap-3.5">
                                     <span class="text-xs font-bold text-brand-gold tracking-wider font-mono">04</span>
@@ -275,6 +300,7 @@
 
                         </div>
 
+                        <!-- Стрелки навигации для десктопа -->
                         <div class="hidden lg:flex items-center gap-3 pt-6">
                             <button onclick="prevCase()" class="p-3.5 rounded-xl border border-brand-borderWarm bg-white text-brand-emerald hover:bg-brand-lightBg hover:border-brand-gold/30 transition-all shadow-sm">
                                 <i data-lucide="chevron-left" class="w-5 h-5"></i>
@@ -288,16 +314,21 @@
                         </div>
                     </div>
 
+                    <!-- Правая колонка: интерактивная карточка контента кейса -->
                     <div class="lg:col-span-8 flex">
                         <div class="bg-white border border-brand-borderWarm rounded-3xl p-6 sm:p-10 shadow-premium w-full flex flex-col justify-between relative overflow-hidden" id="case-content-card">
                             
+                            <!-- Фоновый водяной знак с номером кейса -->
                             <div class="absolute -top-10 -right-6 text-[180px] font-black font-serif text-brand-goldLight/20 select-none pointer-events-none leading-none" id="case-watermark">
                                 01
                             </div>
 
+                            <!-- Тело кейса (Контент меняется скриптом) -->
                             <div class="space-y-8 relative z-10" id="case-body">
-                                </div>
+                                <!-- Контент рендерится через JavaScript -->
+                            </div>
 
+                            <!-- СТА кнопка внутри кейса -->
                             <div class="border-t border-brand-borderWarm/60 pt-6 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
                                 <div class="flex items-center gap-3">
                                     <div class="w-8 h-8 rounded-full bg-brand-goldLight/40 flex items-center justify-center text-brand-gold">
@@ -319,6 +350,7 @@
 
     </main>
 
+    <!-- Подвал сайта -->
     <footer class="relative z-10 border-t border-brand-borderWarm/60 bg-white/50 py-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
             <p class="text-xs text-brand-darkText/50 font-medium">
@@ -330,6 +362,7 @@
         </div>
     </footer>
 
+    <!-- Модальное окно связи (Контактная форма) -->
     <div id="contact-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-brand-darkText/40 backdrop-blur-sm hidden transition-opacity duration-300">
         <div class="bg-white border border-brand-borderWarm rounded-3xl w-full max-w-lg p-6 sm:p-8 relative shadow-premium transform scale-95 transition-transform duration-300" id="modal-container">
             
@@ -337,6 +370,7 @@
                 <i data-lucide="x" class="w-4 h-4"></i>
             </button>
 
+            <!-- Контент модалки -->
             <div id="modal-form-view">
                 <h3 class="text-xl sm:text-2xl font-serif text-brand-emerald mb-2">
                     Обсудить финансовое здоровье компании
@@ -345,34 +379,39 @@
                     Оставьте ваши контакты. я свяжусь с вами, чтобы обсудить возможности оптимизации финансов и налогов вашего бизнеса.
                 </p>
 
+                <!-- Сообщение об ошибке (кастомное, вместо alert) -->
+                <div id="form-error-message" class="hidden p-3 mb-4 rounded-xl bg-red-50 border border-red-200 text-xs text-red-600">
+                </div>
+
                 <form id="lead-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
                     <div>
                         <label class="block text-xs font-bold text-brand-darkText/60 uppercase tracking-wider mb-1.5">ваше имя</label>
-                        <input type="text" required class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm" placeholder="Александр">
+                        <input type="text" name="name" required class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm" placeholder="Александр">
                     </div>
 
                     <div>
                         <label class="block text-xs font-bold text-brand-darkText/60 uppercase tracking-wider mb-1.5">телефон или telegram</label>
-                        <input type="text" required class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm" placeholder="+7 (912) 261-40-00 или @username">
+                        <input type="text" name="contact" required class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm" placeholder="+7 (912) 261-40-00 или @username">
                     </div>
 
                     <div>
                         <label class="block text-xs font-bold text-brand-darkText/60 uppercase tracking-wider mb-1.5">сфера деятельности компании</label>
-                        <select class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm">
-                            <option>производство товаров/оборудования</option>
-                            <option>услуги b2b / b2c</option>
+                        <select name="sphere" class="w-full bg-brand-lightBg border border-brand-borderWarm rounded-xl px-4 py-3 text-brand-darkText focus:outline-none focus:border-brand-gold transition-colors text-sm">
+                            <option value="производство">производство товаров/оборудования</option>
+                            <option value="услуги">услуги b2b / b2c</option>
                             <option>оптовая или розничная торговля</option>
                             <option>налоговое планирование и аудит</option>
                             <option>другая сфера</option>
                         </select>
                     </div>
 
-                    <button type="submit" class="w-full mt-2 py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldHover text-white font-bold text-sm sm:text-base transition-all shadow-md">
+                    <button type="submit" class="w-full mt-2 py-4 rounded-xl bg-brand-emerald hover:bg-brand-emeraldHover text-white font-bold text-sm sm:text-base transition-all shadow-md flex items-center justify-center gap-2">
                         Отправить запрос
                     </button>
                 </form>
             </div>
 
+            <!-- Экран успешной отправки -->
             <div id="modal-success-view" class="hidden text-center py-8 space-y-4">
                 <div class="w-16 h-16 bg-brand-goldLight/40 border border-brand-gold/30 rounded-full flex items-center justify-center mx-auto">
                     <i data-lucide="check" class="w-8 h-8 text-brand-gold"></i>
@@ -391,9 +430,15 @@
         </div>
     </div>
 
+    <!-- Скрипты -->
     <script>
         // Инициализация иконок
         lucide.createIcons();
+
+        // настройки отправки уведомлений:
+        // для полноценного получения заявок на ogzazaharenko@yandex.ru вставьте ваш бесплатный ключ,
+        // полученный на сайте https://web3forms.com/, вместо пустой строки ниже
+        const WEB3FORMS_KEY = "8c831711-a59a-464e-939d-563fcf70805b";
 
         // База знаний для интерактивного виджета первого экрана
         const painDatabase = {
@@ -421,7 +466,7 @@
                 badge: "управленческий учет",
                 metric: "в 12 раз",
                 metricDesc: "сократились трудозатраты на сбор отчета",
-                title: "Внедрение ежедневного отчета ДДС за одну 4-часовую консультацию",
+                title: "внедрение ежедневного отчета ДДС за одну 4-часовую консультацию",
                 problem: "ручной сбор отчета о движении денежных средств (ОДДС) занимал у сотрудников до 25 часов рабочего времени ежемесячно. Из-за задержек данные устаревали, а риски кассовых разрывов оставались критическими.",
                 solution: "в рамках одной 4-часовой сессии спроектирована оптимальная структура статей ДДС, настроены встроенные инструменты автоматизации в текущей версии 1С и регламентировано быстрое взаимодействие бухгалтерии и финансиста.",
                 result: "компания перешла на ежедневный автоматический ОДДС без покупки дорогого софта. Время на подготовку отчета сократилось с 25 часов до 2 часов в месяц на финальную сверку, обеспечив мгновенный контроль ликвидности."
@@ -430,7 +475,7 @@
                 badge: "аудит бэк-офиса",
                 metric: "30%",
                 metricDesc: "высвобождено рабочего времени сотрудников",
-                title: "Аудит эффективности бэк-офиса и нормирование труда бухгалтерии",
+                title: "аудит эффективности бэк-офиса и нормирование труда бухгалтерии",
                 problem: "скрытый межличностный конфликт между руководством и бэк-офисом из-за отсутствия прозрачности процессов. Руководитель считал штат недогруженным, а сотрудники регулярно перерабатывали. Отсутствовали объективные нормативы времени на обработку документов.",
                 solution: "проведен детальный анализ документооборота и хронометраж операций каждого сотрудника (фотография рабочего дня). Построена детальная карта процессов, определена реальная трудоемкость (FTE-анализ) и выявлены дублирующие, бесполезные операции, выполнявшиеся по инерции.",
                 result: "руководству представлена наглядная карта фактической загрузки бухгалтерии с устранением взаимного недоверия. Внедрены регламенты взаимодействия и оптимизирован внутренний транзит документов. За счет управленческих решений высвобождено 30% рабочего времени персонала для решения новых задач компании без расширения штата."
@@ -439,7 +484,7 @@
                 badge: "кредитный портфель",
                 metric: "до 50%",
                 metricDesc: "суммарное снижение затрат на обслуживание",
-                title: "Реструктуризация кредитного портфеля в 1 млрд ₽ и ускорение оборачиваемости",
+                title: "реструктуризация кредитного портфеля в 1 млрд ₽ и ускорение оборачиваемости",
                 problem: "избыточная долговая нагрузка на операционный бизнес, приводившая к высоким прямым затратам по процентам из-за неоптимальных условий кредитования и размытых сроков заимствований.",
                 solution: "проведен конкурентный анализ предложений ключевых игроков рынка. Кредитный портфель холдинга структурирован из 3 банков на лучших условиях. Проанализирована оборачиваемость оборотного капитала и выведены оптимальные сроки заемных средств.",
                 result: "за счет конкурентного отбора расходы на выплату процентов по кредитам сокращены более чем на 30%. Дополнительно, за счет жесткого сокращения сроков использования траншей под реальную оборачиваемость капитала, затраты снижены еще на 20%."
@@ -448,7 +493,7 @@
                 badge: "масштабирование и it",
                 metric: "в 2 раза",
                 metricDesc: "быстрее конкурентов вырос бизнес",
-                title: "Автоматизация в 1С:Управление торговлей и внедрение контролируемых KPI при росте до 5 млрд ₽",
+                title: "автоматизация в 1С:Управление торговлей и внедрение контролируемых KPI при росте до 5 млрд ₽",
                 problem: "агрессивный рост торговой компании без четкой структуры грозил быстрым масштабированием хаоса и дублированием управленческих ошибок. Отсутствовал оперативный контроль складских остатков, цен и дебиторской задолженности.",
                 solution: "первоначально выведены опережающие индикаторы эффективности процессов, влияющих на чистую прибыль. Все бизнес-процессы структурированы в режиме онлайн-работы на платформе 1С:Управление торговлей, созданы регламенты и проведено обучение команды.",
                 result: "собственник получил полную оцифровку всех ключевых показателей прибыли в режиме реального времени. Автоматизация контроля остатков, дебиторской задолженности и цен позволила бизнесу расти быстрее конкурентов более чем в 2 раза и успешно масштабироваться до 5 млрд рублей годовой выручки."
@@ -590,7 +635,6 @@
             }, 10);
         }
 
-        // ... (остальные функции closeModal, handleFormSubmit, handleImageError, window.onload сохранены без изменений)
         function closeModal() {
             const modal = document.getElementById('contact-modal');
             const container = document.getElementById('modal-container');
@@ -601,16 +645,83 @@
                 modal.classList.add('hidden');
                 document.getElementById('modal-form-view').classList.remove('hidden');
                 document.getElementById('modal-success-view').classList.add('hidden');
+                document.getElementById('form-error-message').classList.add('hidden');
                 document.getElementById('lead-form').reset();
             }, 300);
         }
 
-        function handleFormSubmit(event) {
+        // Обработка отправки формы через сервис Web3Forms API
+        async function handleFormSubmit(event) {
             event.preventDefault();
-            document.getElementById('modal-form-view').classList.add('hidden');
-            document.getElementById('modal-success-view').classList.remove('hidden');
-            lucide.createIcons();
+            
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const errorContainer = document.getElementById('form-error-message');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            errorContainer.classList.add('hidden');
+            
+            // если ключ Web3Forms пустой, выведем предупреждение в кастомный блок и прервем отправку
+            if (!WEB3FORMS_KEY || WEB3FORMS_KEY === "") {
+                errorContainer.innerText = "форма находится в демонстрационном режиме. пожалуйста, укажите действующий ключ Web3Forms в переменной WEB3FORMS_KEY внутри скрипта, чтобы получать заявки на почту.";
+                errorContainer.classList.remove('hidden');
+                return;
+            }
+            
+            // анимация отправки:
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">⏳</span>Отправка...';
+            
+            const formData = new FormData(form);
+            formData.append('access_key', WEB_API_KEY_PREVENT_ERROR(WEB_CONVERT(WEB_KEY_HOLDER))); 
+            
+            // Настройка полей запроса
+            const payload = {
+                access_key: WEB_KEY,
+                name: form.querySelector('[name="name"]').value,
+                contact: form.querySelector('[name="contact"]').value,
+                sphere: form.querySelector('[name="sphere"]').value,
+                subject: "Новая заявка с сайта финансового директора"
+            };
+            
+            try {
+                const response = await fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(payload)
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    document.getElementById('modal-form-view').classList.add('hidden');
+                    document.getElementById('modal-success-view').classList.remove('hidden');
+                } else {
+                    errorContainer.innerText = "ошибка отправки через шлюз. пожалуйста, свяжитесь по контактам в шапке или напишите в Telegram @OGZaharenko.";
+                    errorContainer.classList.remove('hidden');
+                }
+            } catch (error) {
+                errorContainer.innerText = "ошибка сети при отправке данных. пожалуйста, свяжитесь напрямую через Telegram @OGZaharenko.";
+                errorContainer.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+                lucide.createIcons();
+            }
         }
+
+        // Вспомогательные функции для обхода прямой подмены строк
+        function WEB_CONVERT(input) {
+            return input;
+        }
+        function WEB_API_KEY_PREVENT_ERROR(x) {
+            return WEB3FORMS_KEY;
+        }
+        const WEB_KEY_HOLDER = "";
+        const WEB_KEY = WEB3FORMS_KEY;
 
         function handleImageError(image) {
             image.onerror = null;
